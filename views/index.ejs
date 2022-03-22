@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Discord QR Code</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="../public/assets/style.css" type="text/css"> -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=sans-serif:wght@500&display=swap');
+
+    * {
+      font-family: sans-serif;
+    }
+    body {
+      margin-top: 100px;
+      margin-left:300px;
+      padding: 10px;
+      border: 3px solid #2ca577;
+      width:50vw;
+      height:60vh;
+    }
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center">Discord QR Gen</h1>
+    <p>Type your URL or Text below and click Generate!</p>
+    <form class="form" action="/scan" method="POST">
+      <input name="url" class="form-control" placeholder="URL or Text" type="text" required>
+      <br>
+      <button type="submit" class="btn btn-warning" value="Get QR">Generate</button>
+    </form>
+
+  </div>
+</body>
+
+</html>
